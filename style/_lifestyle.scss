@@ -1,0 +1,89 @@
+.lifestyle__content {
+    background-color: $background-gray;
+    border-radius: 40px;
+
+    padding: 63px 64px 76px;
+
+    @media(max-width: $breakpoint-md) {
+        padding: 40px 24px 27px;
+    }
+    
+    h2 {
+        font-family: "Archivo black", sans-serif;
+        font-size: 48px;
+        text-align: center;
+
+        @media(max-width: $breakpoint-md) {
+            font-size: 32px;
+            line-height: 36px;
+            padding: 0 36px;
+        }
+    }
+}
+
+.lifestyle__content-group {
+    margin-top: 62px;
+
+    @media(max-width: $breakpoint-md) {
+        margin-top: 28px;
+    }
+}
+
+.lifestyle__row-first {
+    display: grid;
+    grid-template-columns: 407px 684px;
+    grid-template-rows: 289px;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    @media(max-width: $breakpoint-xl) {
+        grid-template-columns: 355px 459px;
+    }
+
+    @media(max-width: $breakpoint-lg) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.lifestyle__row-second {
+    display: grid;
+    grid-template-columns: 684px 407px;
+    grid-template-rows: 289px;
+    gap: 20px;
+    justify-content: center;
+
+    @media(max-width: $breakpoint-xl) {
+        grid-template-columns: 459px 355px;
+    }
+
+    @media(max-width: $breakpoint-lg) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.lifestyle__item {
+    position: relative;
+
+    @media(max-width: $breakpoint-lg) {
+        height: 250px;
+    }
+
+    h2{
+        position: absolute;
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: 700;
+        font-size: 36px;
+        top: 25px;
+        left: 36px;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /*картинка не соответствует размеру блока, поэтому надо использовать функцию, чтобы она правильно обрезалась*/
+        border-radius: 20px;
+    }
+}

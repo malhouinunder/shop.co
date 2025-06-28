@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100,
+        "YTLC" 500;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+button {
+    padding: 0;
+    background: none;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: $base-color;
+}
+
+h1 {
+    font-family: "Archivo black", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 64px;
+    line-height: 64px;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: auto;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+h5 {
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+
+    @media (max-width: $breakpoint-xl) {
+        max-width: $container-lg;
+        overflow: hidden;
+    }
+
+    @media (max-width: $breakpoint-lg) {
+        max-width: $container-md;
+    }
+
+    @media (max-width: $breakpoint-md) {
+        max-width: $container-sm;
+    }
+    
+    @media (max-width: $breakpoint-sm) {
+        max-width: 100%;
+        padding: 0 12px;
+    }
+}
+
+.button_primary-sm {
+    font-family: "Nunito Sans", sans-serif;
+    background-color: $base-color;
+    color: $white;
+    padding: 15px 24px;
+    border-radius: 62px;
+    font-size: 16px;
+    line-height: auto;
+    font-weight: 500;
+}
+
+.button_primary-xl {
+    font-family: "Nunito Sans", sans-serif;
+    background-color: $base-color;
+    color: $white;
+    padding: 15px 54px;
+    border-radius: 62px;
+    font-size: 16px;
+    line-height: auto;
+    font-weight: 500;
+}
+
+.button_light-sm {
+    font-family: "Nunito Sans", sans-serif;
+    border: thin solid $black-10;
+    padding: 15px 24px;
+    border-radius: 62px;
+    font-size: 16px;
+    line-height: auto;
+    font-weight: 500;
+}
+
+.button_light-xl {
+    font-family: "Nunito Sans", sans-serif;
+    border: thin solid $black-10;
+    padding: 16px 54px;
+    border-radius: 62px;
+    font-size: 16px;
+    line-height: auto;
+    font-weight: 500;
+}
